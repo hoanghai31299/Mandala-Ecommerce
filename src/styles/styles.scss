@@ -1,6 +1,9 @@
+@import "base/base";
+
 @import "helpers/variables";
 @import "helpers/mixins";
 
-h1 {
-  color: red;
-}
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "pages/home";
