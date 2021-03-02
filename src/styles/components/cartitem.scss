@@ -1,0 +1,18 @@
+.navigation-cart-item {
+    display: flex;
+    padding: .3rem;
+    .cart-item-info {
+        display: flex;
+        margin: 0 1rem;
+        flex-direction: column;
+        .cart-item-name {
+            font-size: 12px;
+        }
+        .cart-item-price {
+            font-size: 14px;
+            color: $color-green;
+            font-family: $price-font;
+            font-style: italic;
+        }
+    }
+}
