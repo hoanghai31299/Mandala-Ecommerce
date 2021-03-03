@@ -1,17 +1,18 @@
 import React from "react";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
+import HomePage from "./page/Home";
 import { BrowserRouter as Router } from "react-router-dom";
-function HomePage() {
+function App() {
   return (
     <div className="home">
       <Router>
         <Header />
-        <div className="home">Home Page</div>
+        <HomePage />
         <Footer />
       </Router>
     </div>
   );
 }
 
-export default HomePage;
+export default App;

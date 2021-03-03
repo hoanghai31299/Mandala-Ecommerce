@@ -1,3 +1,97 @@
 .footer {
-    color: $color-black-light-1;
+  z-index: -10;
+  background-color: $color-black;
+  .footer-container {
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: $break-point-tablet) {
+      width: 90%;
+    }
+    .footer-list {
+      padding: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $break-point-tablet) {
+        flex-direction: column;
+      }
+      .footer-item {
+        padding: 0 5px;
+        &:nth-child(1) {
+          flex: 4;
+          font-weight: bold;
+        }
+        &:nth-child(1) ~ li {
+          flex: 2;
+          ul.footer-sub-menu > li > a {
+            display: block;
+            transition: all 0.2s ease-in;
+            position: relative;
+            &::before {
+              position: absolute;
+              content: "";
+              width: 5px;
+              height: 5px;
+              background-color: $color-green;
+              top: 40%;
+              left: -10px;
+              display: none;
+            }
+            &:hover {
+              color: $color-green;
+              transform: translateX(10px);
+              &::before {
+                display: block;
+              }
+            }
+          }
+        }
+        & > .footer-item-heading {
+          margin: 20px 0;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: $color-white;
+        }
+        .dummy-span {
+          display: block;
+          margin-top: 10px;
+        }
+        .footer-sub-menu {
+          font-size: 14px;
+          li {
+            padding: 5px 0;
+            a {
+              i {
+                color: $color-green;
+              }
+              text-decoration: none;
+              font-family: $footer-font;
+              //   font-weight: bold;
+              color: $color-black-light;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-extend {
+    padding: 25px 0;
+    border-top: 0.1px $color-black-light solid;
+    & > .footer-copyright {
+      display: flex;
+      width: 80%;
+      @media (max-width: $break-point-tablet) {
+        width: 90vw;
+      }
+      align-items: center;
+      margin: 0 auto;
+      justify-content: space-between;
+      & > div:nth-child(1) {
+        color: $color-black-light;
+        font-size: 12px;
+        font-family: $footer-font;
+        font-weight: 500;
+      }
+    }
+  }
 }

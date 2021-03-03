@@ -182,12 +182,12 @@ function Header() {
             <i className="fas fa-search"></i>
           </div>
         </div>
-        <div className="btn-expand" onClick={handleExpandClick}>
-          {!expand ? (
-            <i class="fas fa-bars"></i>
-          ) : (
-            <i className="far fa-times-circle"></i>
-          )}
+        <div className="navigation-btn">
+          <div
+            className={!expand ? "humberger" : "humberger active"}
+            onClick={handleExpandClick}>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>

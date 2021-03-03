@@ -1,5 +1,4 @@
-.home {
-    color: brown;
-    height: 100vh;
-    z-index: 1;
-}
+@import "components/hero.scss";
+@import "components/banner.scss";
+@import "components/imagegrid.scss";
+@import "components/homefooter.scss";
