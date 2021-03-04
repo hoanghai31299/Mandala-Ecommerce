@@ -1,0 +1,51 @@
+.slider-product {
+  .slider-product-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+    .tab {
+      color: $color-grey;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 1px;
+        background-color: $color-grey;
+        left: 50%;
+        bottom: 0;
+        z-index: 1;
+        transform: translateX(-50%);
+      }
+      .tab-name.active {
+        a {
+          font-size: 34px;
+          color: $color-green;
+          //   border-left: 1px $color-green solid;
+          //   border-right: 1px $color-green solid;
+        }
+      }
+      .tab-name {
+        a {
+          font-family: $hot-product-font;
+          font-size: 18px;
+          text-decoration: none;
+          color: $color-grey;
+          padding: 0 20px;
+        }
+      }
+      span {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 2;
+        transform: translate(-50%, 50%);
+        background-color: $color-white;
+      }
+    }
+  }
+}

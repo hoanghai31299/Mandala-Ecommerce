@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @font-face {
   font-family: "ViceroyJF";
   src: url("../../assets/font/ViceroyJF.ttf");
@@ -12,10 +13,12 @@ $color-green: rgba(120, 150, 41, 1);
 $color-black-light: #646464;
 $color-black-light-1: rgba(244, 244, 244, 0.4);
 $color-hero: rgb(241, 241, 241);
-$color-grey-2: rgb(231, 231, 231);
+$color-grey-2: rgb(192, 190, 190);
 $main-font: "Open Sans", sans-serif;
 $price-font: "Lobster", sans-serif;
 $hero-text-font: "ViceroyJF", "sans-serif";
 $footer-font: "Roboto", sans-serif;
-$break-point-tablet: 768px;
+$hot-product-font: "Pacifico", cursive;
+$break-point-large-desktop: 1720px;
+$break-point-tablet: 1024px;
 $break-point-mobile: 600px;

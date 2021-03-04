@@ -161,8 +161,8 @@ function Header() {
             </Link>
             <div className="cart-item-container">
               <ul className="navigation-cart-items">
-                {cartItems.map((it) => (
-                  <CartItem item={it}></CartItem>
+                {cartItems.map((it, index) => (
+                  <CartItem key={index} item={it}></CartItem>
                 ))}
               </ul>
               <div className="navigation-cart-total">

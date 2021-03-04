@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import BlogImage from "../../assets/images/blog-img.png";
+import Slider from "react-slick";
 const tags = [
   "Đồng hồ",
   "Túi",
@@ -20,46 +21,98 @@ const tags = [
   "Thời trang nam",
 ];
 function HomeFooter() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
   return (
     <div className="home-footer">
       <div className="home-footer-container">
         <div className="links-container">
-          <Link className="link-item">
-            <div className="logo-icon">
-              <i className="fab fa-google-plus-g"></i>
+          <Slider {...sliderSettings}>
+            <div>
+              <Link className="link-item">
+                <div className="logo-icon">
+                  <i className="fab fa-google-plus-g"></i>
+                </div>
+                <span className="logo-name">google</span>
+              </Link>
             </div>
-            <span className="logo-name">google</span>
-          </Link>
-          <Link className="link-item">
-            <div className="logo-icon">
-              <i className="fab fa-instagram"></i>
+            <div>
+              <Link className="link-item">
+                <div className="logo-icon">
+                  <i className="fab fa-instagram"></i>
+                </div>
+                <span className="logo-name">instagram</span>
+              </Link>
             </div>
-            <span className="logo-name">instagram</span>
-          </Link>
-          <Link className="link-item">
-            <div className="logo-icon">
-              <i className="fab fa-twitter"></i>
+            <div>
+              <Link className="link-item">
+                <div className="logo-icon">
+                  <i className="fab fa-twitter"></i>
+                </div>
+                <span className="logo-name">twitter</span>
+              </Link>
             </div>
-            <span className="logo-name">twitter</span>
-          </Link>
-          <Link className="link-item">
-            <div className="logo-icon">
-              <i className="fab fa-facebook"></i>
+            <div>
+              <Link className="link-item">
+                <div className="logo-icon">
+                  <i className="fab fa-facebook"></i>
+                </div>
+                <span className="logo-name">facebook</span>
+              </Link>
             </div>
-            <span className="logo-name">facebook</span>
-          </Link>
-          <Link className="link-item">
-            <div className="logo-icon">
-              <i className="fab fa-pinterest"></i>
+            <div>
+              <Link className="link-item">
+                <div className="logo-icon">
+                  <i className="fab fa-pinterest"></i>
+                </div>
+                <span className="logo-name">pinterest</span>
+              </Link>
             </div>
-            <span className="logo-name">pinterest</span>
-          </Link>
-          <Link className="link-item">
-            <div className="logo-icon">
-              <i className="fab fa-linkedin"></i>
+            <div>
+              <Link className="link-item">
+                <div className="logo-icon">
+                  <i className="fab fa-linkedin"></i>
+                </div>
+                <span className="logo-name">linkedin</span>
+              </Link>
             </div>
-            <span className="logo-name">linkedin</span>
-          </Link>
+          </Slider>
         </div>
         <div className="action-container">
           <div className="action-item">
