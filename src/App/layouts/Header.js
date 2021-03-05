@@ -25,7 +25,7 @@ function Header() {
   };
   return (
     <div className="header">
-      <div className="header-container">
+      <div className="header-container max-width">
         <div className="logo-container">
           <Link className="hg-link" to="/">
             <img src={Logo} alt="logo" className="logo" />
@@ -45,7 +45,7 @@ function Header() {
             </li>
             <li className="item product-list">
               <Link to="#" className="item-link">
-                sản phẩm
+                sản phẩm <i className="fas fa-sort-down"></i>
               </Link>
               <ul className="sub-menu">
                 <li className="sub-menu-item">

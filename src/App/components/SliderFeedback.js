@@ -37,7 +37,7 @@ function SliderFeedback() {
   };
   return (
     <div className="feedback">
-      <div className="feedback-container">
+      <div className="feedback-container max-width">
         <Slider {...sliderSettings}>
           {feedbacks.map((fb) => {
             return (

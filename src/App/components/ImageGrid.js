@@ -8,10 +8,16 @@ import Big2 from "../../assets/images/Item_3--left--img.jpg";
 function ImageGrid() {
   return (
     <div className="image-grid">
-      <div className="image-grid-container">
+      <div className="image-grid-container max-width">
         <img src={Image1} alt="product" className="image-grid-item" />
         <img src={Image2} alt="product" className="image-grid-item" />
-        <img src={Big1} alt="product" className="image-grid-item" />
+        <div className="image-grid-item video">
+          <img src={Big1} alt="product" />
+          <div className="play-button">
+            <i className="fas fa-caret-right"></i>
+          </div>
+        </div>
+
         <img src={Big2} alt="product" className="image-grid-item" />
         <img src={Image3} alt="product" className="image-grid-item" />
         <img src={Image4} alt="product" className="image-grid-item" />

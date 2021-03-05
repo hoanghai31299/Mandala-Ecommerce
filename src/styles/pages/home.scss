@@ -4,3 +4,10 @@
 @import "components/homefooter.scss";
 @import "components/sliderfeedback.scss";
 @import "components/sliderproduct.scss";
+@import "components/productcard.scss";
+.max-width {
+  max-width: 1200px;
+  @media (max-width: $break-point-tablet) {
+    width: 90%;
+  }
+}

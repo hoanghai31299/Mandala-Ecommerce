@@ -4,7 +4,7 @@ import FooterExtend from "../../assets/images/footer_extend.png";
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer-container">
+      <div className="footer-container max-width">
         <ul className="footer-list">
           <li className="footer-item">
             <div className="footer-item-heading">liên hệ với chúng tôi</div>
@@ -103,7 +103,7 @@ function Footer() {
         </ul>
       </div>
       <div className="footer-extend">
-        <div className="footer-copyright">
+        <div className="footer-copyright  max-width">
           <div>© Copyright 2008-2014 DKT Technology JSC</div>
           <div>
             <img src={FooterExtend} alt="extend" />

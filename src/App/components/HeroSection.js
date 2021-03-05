@@ -5,7 +5,7 @@ import LayerProduct from "../../assets/images/Layer_product.png";
 function HeroSection() {
   return (
     <div className="hero">
-      <div className="hero-container">
+      <div className="hero-container max-width">
         <div className="hero-left">
           <img src={LayerProduct} alt="product" />
           <p>

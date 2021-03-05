@@ -61,7 +61,7 @@ function HomeFooter() {
   };
   return (
     <div className="home-footer">
-      <div className="home-footer-container">
+      <div className="home-footer-container max-width">
         <div className="links-container">
           <Slider {...sliderSettings}>
             <div>

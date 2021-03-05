@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   return (
     <div className="home-banner">
-      <div className="home-banner-container">
+      <div className="home-banner-container max-width">
         <div className="home-banner-item">
           <i className="fas fa-globe-europe"></i>
           <span>Miễn phí vận chuyển trên toàn quốc</span>
