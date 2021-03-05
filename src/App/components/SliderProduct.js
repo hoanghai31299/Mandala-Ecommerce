@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Background from "../../assets/images/hot-product--background.jpg";
 import ProductCard from "./ProductCard";
@@ -121,21 +121,28 @@ function SliderProduct() {
       },
     ],
   };
+  const [activeTab, setActiveTab] = useState(2);
   return (
     <div
       className="slider-product"
       style={{ backgroundImage: `url(${Background})` }}>
       <div className="slider-product-container max-width">
         <div className="tab">
-          <div className="tab-name">
+          <div
+            onClick={() => setActiveTab(1)}
+            className={activeTab !== 1 ? "tab-name" : "tab-name active"}>
             <Link to="#">Sản phẩm mới</Link>
           </div>
           <span className="dummy-span">|</span>
-          <div className="tab-name active">
+          <div
+            onClick={() => setActiveTab(2)}
+            className={activeTab !== 2 ? "tab-name" : "tab-name active"}>
             <Link to="#">Sản phẩm bán chạy</Link>
           </div>
           <span className="dummy-span">|</span>
-          <div className="tab-name">
+          <div
+            onClick={() => setActiveTab(3)}
+            className={activeTab !== 3 ? "tab-name" : "tab-name active"}>
             <Link to="#">Sản phẩm đặc biệt</Link>
           </div>
           <span>{"////////////////"}</span>
