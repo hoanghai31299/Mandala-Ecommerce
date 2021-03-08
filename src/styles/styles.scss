@@ -3,6 +3,11 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
+@import "components/breadcrumb.scss";
 @import "layouts/header";
 @import "layouts/footer";
 @import "pages/home";
+@import "pages/blog";
+@import "pages/blogdetail.scss";
+@import "pages/signin.scss";
+@import "pages/error.scss";

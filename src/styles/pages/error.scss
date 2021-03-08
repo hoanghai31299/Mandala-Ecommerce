@@ -1,0 +1,55 @@
+.error {
+  text-align: center;
+  height: 100vh;
+  line-height: 20px;
+  background-color: $color-white;
+  @include flex(row, center, center, nowrap);
+  .error-container {
+    width: 600px;
+    max-width: 80%;
+    @include flex(column, center, center, nowrap);
+  }
+  img {
+    max-width: 100%;
+  }
+  .search {
+    position: relative;
+    margin: 20px 0;
+    width: 500px;
+    max-width: 80%;
+    input {
+      display: block;
+      width: 100%;
+      padding: 5px 10px;
+      border: 1px $color-grey solid;
+      border-radius: 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+    i {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $color-grey;
+    }
+  }
+  div {
+    a {
+      color: $color-grey;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    span {
+      color: $color-grey;
+      margin: 0 20px;
+    }
+  }
+  h2 {
+    font-size: 14px;
+    margin-top: 20px;
+    color: $color-grey;
+  }
+}

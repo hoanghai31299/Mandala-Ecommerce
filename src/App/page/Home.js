@@ -5,9 +5,11 @@ import ImageGrid from "../components/ImageGrid";
 import HomeFooter from "../components/HomeFooter";
 import SliderFeedback from "../components/SliderFeedback";
 import SliderProduct from "../components/SliderProduct";
+
 function Home() {
   return (
     <div className="home">
+      {/* <BreadCrumb links={arr} /> */}
       <HeroSection />
       <Banner />
       <ImageGrid />

@@ -145,7 +145,7 @@
       }
       .navigation-cart {
         position: relative;
-        x &:hover {
+        &:hover {
           & > div {
             opacity: 1;
             pointer-events: all;

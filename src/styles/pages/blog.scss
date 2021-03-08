@@ -1,0 +1,46 @@
+@import "components/bloglist.scss";
+.blog {
+  margin-bottom: 40px;
+  .blog-container {
+    width: 80%;
+    margin: 0 auto;
+    .blog-title {
+      font-size: 20px;
+      padding: 20px 0;
+    }
+
+    .blog-pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .change-view-action {
+        font-size: 16px;
+        i {
+          user-select: none;
+          padding: 20px 10px 20px 0;
+          cursor: pointer;
+        }
+      }
+      .pagination {
+        li.disabled {
+          opacity: 0;
+          pointer-events: none;
+        }
+        li {
+          font-size: 14px;
+          font-weight: 200;
+          display: inline-block;
+          padding: 0 10px;
+          cursor: pointer;
+          user-select: none;
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+        li.current {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

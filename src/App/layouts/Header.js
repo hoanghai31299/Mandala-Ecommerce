@@ -157,7 +157,7 @@ function Header() {
         <div className="sub-navigation">
           <div className="navigation-cart">
             <Link to="#">
-              <i class="fas fa-shopping-cart"></i>
+              <i className="fas fa-shopping-cart"></i>
             </Link>
             <div className="cart-item-container">
               <ul className="navigation-cart-items">

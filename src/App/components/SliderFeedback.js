@@ -39,9 +39,9 @@ function SliderFeedback() {
     <div className="feedback">
       <div className="feedback-container max-width">
         <Slider {...sliderSettings}>
-          {feedbacks.map((fb) => {
+          {feedbacks.map((fb, index) => {
             return (
-              <div className="feedback-item-container">
+              <div key={index} className="feedback-item-container">
                 <div
                   className="feedback-item"
                   style={{

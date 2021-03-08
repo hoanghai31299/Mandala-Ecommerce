@@ -19,9 +19,28 @@
   font-family: inherit;
   transition: 0.2s;
 }
-
-@mixin gradient($color1, $color2, $alpha1: 1, $alpha2: 1, $direction: to right) {
-  background-image: linear-gradient($direction, rgba($color1, $alpha1), rgba($color2, $alpha2));
+@mixin buttonBlack {
+  color: $color-white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 200;
+  cursor: pointer;
+  background-color: $color-black;
+}
+@mixin gradient(
+  $color1,
+  $color2,
+  $alpha1: 1,
+  $alpha2: 1,
+  $direction: to right
+) {
+  background-image: linear-gradient(
+    $direction,
+    rgba($color1, $alpha1),
+    rgba($color2, $alpha2)
+  );
 }
 
 @mixin size($width, $height: $width) {
@@ -51,7 +70,13 @@
   border-bottom-left-radius: $btl;
 }
 
-@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
   position: $position;
   top: $top;
   right: $right;
@@ -94,7 +119,33 @@
   align-items: $items;
   flex-wrap: $wrap;
 }
-
+@mixin input {
+  width: 500px;
+  max-width: 100%;
+  border: $color-grey-2 solid 1px;
+  padding: 7px 20px;
+  font-size: 14px;
+  &:focus {
+    outline: none;
+  }
+}
+@mixin tags {
+  display: flex;
+  flex-wrap: wrap;
+  .single-tag {
+    display: block;
+    cursor: pointer;
+    padding: 5px 12px;
+    margin: 2px;
+    border: 0.5px $color-grey-2 solid;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $color-white;
+      background-color: $color-green;
+    }
+  }
+}
 @mixin media-breakpoint-down($breakpoint) {
   @if $breakpoint==xxxl {
     @media only screen and (min-width: 1280px) {

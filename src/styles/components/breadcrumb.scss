@@ -1,0 +1,33 @@
+.breadcrumbs {
+  .breadcrumbs-container {
+    padding: 100px 0 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 0.5px $color-grey-2 solid;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: $color-black;
+        position: relative;
+        &:after {
+          content: ">";
+          right: -10px;
+          position: absolute;
+          top: 0;
+          transform: translate(50%, 30%);
+        }
+      }
+      &:last-child {
+        a {
+          color: $color-green;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

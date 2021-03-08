@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-import BlogImage from "../../assets/images/blog-img.png";
+import BlogImage from "../../assets/images/blogs/blog-img.png";
 import Slider from "react-slick";
 const tags = [
   "Đồng hồ",
@@ -147,8 +147,8 @@ function HomeFooter() {
             <div className="content-blog">
               <img src={BlogImage} alt="blog" />
 
+              <h2>REVIEW SON KEM BOURJOIS VELVET</h2>
               <p>
-                <h2>REVIEW SON KEM BOURJOIS VELVET</h2>
                 Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ
                 quay lại hăm nóng cái Blog này vào một ngày đầu hè nóng oi bức,
                 khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
