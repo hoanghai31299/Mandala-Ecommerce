@@ -4,10 +4,17 @@
 @import "helpers/mixins";
 
 @import "components/breadcrumb.scss";
+@import "components/popup.scss";
 @import "layouts/header";
 @import "layouts/footer";
 @import "pages/home";
 @import "pages/blog";
+@import "pages/contact.scss";
+@import "pages/about.scss";
 @import "pages/blogdetail.scss";
 @import "pages/signin.scss";
+@import "pages/productdetail.scss";
+@import "pages/products.scss";
+@import "pages/cart.scss";
+@import "pages/account.scss";
 @import "pages/error.scss";

@@ -1,0 +1,111 @@
+.btn-show-popup {
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  padding: 10px;
+  z-index: 20;
+  border: none;
+  color: $color-white;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.3;
+  &:active {
+    outline: none;
+  }
+}
+.popup {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 51;
+  .popup-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .close-btn {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 20;
+      &::before,
+      &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+      }
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+    .popup-content {
+      background-size: cover;
+      background-image: url("https://i.pinimg.com/originals/86/77/bd/8677bd3fde75ff6ad9cb591eb7154037.jpg");
+      width: 400px;
+      height: 400px;
+      max-width: 100%;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 20px;
+      @media (max-width: $break-point-mobile) {
+        border-radius: 0;
+      }
+      h3 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: $color-black;
+        font-weight: 700;
+      }
+      p {
+        text-align: center;
+        span {
+          display: block;
+        }
+        font-size: 12px;
+      }
+      .search {
+        margin: 20px 0;
+        width: 500px;
+        max-width: 80%;
+        input {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          border: 1px $color-grey solid;
+          border-radius: 20px;
+          &::placeholder {
+            font-size: 12px;
+            font-weight: 700;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      div.send {
+        a {
+          color: $color-black;
+          font-size: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

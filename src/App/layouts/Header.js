@@ -34,7 +34,7 @@ function Header() {
         <div className={!expand ? "navigation" : "navigation expand"}>
           <ul className="main-menu">
             <li className="item">
-              <Link to="#" className="item-link">
+              <Link to="/" className="item-link">
                 trang chủ
               </Link>
             </li>
@@ -44,7 +44,7 @@ function Header() {
               </Link>
             </li>
             <li className="item product-list">
-              <Link to="#" className="item-link">
+              <Link to="/products" className="item-link">
                 sản phẩm <i className="fas fa-sort-down"></i>
               </Link>
               <ul className="sub-menu">
@@ -52,28 +52,28 @@ function Header() {
                   <div>dưỡng da</div>
                   <ul className="sub-menu-2">
                     <li>
-                      <Link to="#">Áo khoác</Link>
+                      <Link to="/products">Áo khoác</Link>
                     </li>
                     <li>
-                      <Link to="#">Áo khoác</Link>
+                      <Link to="/products">Áo khoác</Link>
                     </li>
                     <li>
-                      <Link to="#">Dresses</Link>
+                      <Link to="/products">Dresses</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần/váy</Link>
+                      <Link to="/products">Quần/váy</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần sortc</Link>
+                      <Link to="/products">Quần sortc</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần Jean</Link>
+                      <Link to="/products">Quần Jean</Link>
                     </li>
                     <li>
-                      <Link to="#">Đồ đan</Link>
+                      <Link to="/products">Đồ đan</Link>
                     </li>
                     <li>
-                      <Link to="#">Áo nỉ</Link>
+                      <Link to="/products">Áo nỉ</Link>
                     </li>
                   </ul>
                 </li>
@@ -81,28 +81,28 @@ function Header() {
                   <div>nước hoa</div>
                   <ul className="sub-menu-2">
                     <li>
-                      <Link to="#">Áo khoác</Link>
+                      <Link to="/products">Áo khoác</Link>
                     </li>
                     <li>
-                      <Link to="#">Áo khoác</Link>
+                      <Link to="/products">Áo khoác</Link>
                     </li>
                     <li>
-                      <Link to="#">Dresses</Link>
+                      <Link to="/products">Dresses</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần/váy</Link>
+                      <Link to="/products">Quần/váy</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần sortc</Link>
+                      <Link to="/products">Quần sortc</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần Jean</Link>
+                      <Link to="/products">Quần Jean</Link>
                     </li>
                     <li>
-                      <Link to="#">Đồ đan</Link>
+                      <Link to="/products">Đồ đan</Link>
                     </li>
                     <li>
-                      <Link to="#">Áo nỉ</Link>
+                      <Link to="/products">Áo nỉ</Link>
                     </li>
                   </ul>
                 </li>
@@ -110,28 +110,28 @@ function Header() {
                   <div>trang sức</div>
                   <ul className="sub-menu-2">
                     <li>
-                      <Link to="#">Áo khoác</Link>
+                      <Link to="/products">Áo khoác</Link>
                     </li>
                     <li>
-                      <Link to="#">Áo khoác</Link>
+                      <Link to="/products">Áo khoác</Link>
                     </li>
                     <li>
-                      <Link to="#">Dresses</Link>
+                      <Link to="/products">Dresses</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần/váy</Link>
+                      <Link to="/products">Quần/váy</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần sortc</Link>
+                      <Link to="/products">Quần sortc</Link>
                     </li>
                     <li>
-                      <Link to="#">Quần Jean</Link>
+                      <Link to="/products">Quần Jean</Link>
                     </li>
                     <li>
-                      <Link to="#">Đồ đan</Link>
+                      <Link to="/products">Đồ đan</Link>
                     </li>
                     <li>
-                      <Link to="#">Áo nỉ</Link>
+                      <Link to="/products">Áo nỉ</Link>
                     </li>
                   </ul>
                 </li>
@@ -143,12 +143,12 @@ function Header() {
               </Link>
             </li>
             <li className="item">
-              <Link to="#" className="item-link">
+              <Link to="/contact" className="item-link">
                 bản đồ
               </Link>
             </li>
             <li className="item">
-              <Link to="#" className="item-link">
+              <Link to="/contact" className="item-link">
                 liên hệ
               </Link>
             </li>

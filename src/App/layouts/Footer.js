@@ -36,13 +36,13 @@ function Footer() {
             <div className="footer-item-heading">chuyển hàng</div>
             <ul className="footer-sub-menu">
               <li>
-                <Link to="#">Mua sắm trực tuyến</Link>
+                <Link to="/about">Mua sắm trực tuyến</Link>
               </li>
               <li>
-                <Link to="#">Từ chúng tôi</Link>
+                <Link to="/about">Từ chúng tôi</Link>
               </li>
               <li>
-                <Link to="#">Chính sách vận chuyển</Link>
+                <Link to="/about">Chính sách vận chuyển</Link>
               </li>
               <li>
                 <Link to="#">Thông tin vận chuyển</Link>
@@ -53,16 +53,16 @@ function Footer() {
             <div className="footer-item-heading">hỗ trợ</div>
             <ul className="footer-sub-menu">
               <li>
-                <Link to="#">Về chúng tôi</Link>
+                <Link to="/about">Về chúng tôi</Link>
               </li>
               <li>
-                <Link to="#">Thanh toán an toàn</Link>
+                <Link to="/about">Thanh toán an toàn</Link>
               </li>
               <li>
-                <Link to="#">Tùy chọn vận chuyển</Link>
+                <Link to="/about">Tùy chọn vận chuyển</Link>
               </li>
               <li>
-                <Link to="#">Chính sách vận chuyển</Link>
+                <Link to="/about">Chính sách vận chuyển</Link>
               </li>
             </ul>
           </li>
@@ -70,13 +70,13 @@ function Footer() {
             <div className="footer-item-heading">thông tin</div>
             <ul className="footer-sub-menu">
               <li>
-                <Link to="#">Điều khoản</Link>
+                <Link to="/contact">Điều khoản</Link>
               </li>
               <li>
-                <Link to="#">Trả hàng</Link>
+                <Link to="/contact">Trả hàng</Link>
               </li>
               <li>
-                <Link to="#">Chính sách riêng tư</Link>
+                <Link to="/contact">Chính sách riêng tư</Link>
               </li>
               <li>
                 <Link to="#">Điều kiện</Link>
@@ -87,16 +87,16 @@ function Footer() {
             <div className="footer-item-heading">my account</div>
             <ul className="footer-sub-menu">
               <li>
-                <Link to="#">Xem giỏ hàng</Link>
+                <Link to="/cart">Xem giỏ hàng</Link>
               </li>
               <li>
-                <Link to="#">Sản phẩm yêu thích</Link>
+                <Link to="/cart">Sản phẩm yêu thích</Link>
               </li>
               <li>
-                <Link to="#">Kiểm tra</Link>
+                <Link to="/account">Kiểm tra</Link>
               </li>
               <li>
-                <Link to="#">Theo dõi đơn hàng</Link>
+                <Link to="/account">Theo dõi đơn hàng</Link>
               </li>
             </ul>
           </li>

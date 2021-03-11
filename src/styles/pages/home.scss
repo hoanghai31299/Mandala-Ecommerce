@@ -4,10 +4,16 @@
 @import "components/homefooter.scss";
 @import "components/sliderfeedback.scss";
 @import "components/sliderproduct.scss";
-@import "components/productcard.scss";
+@import "components/products/productcard.scss";
+.home {
+  position: relative;
+}
 .max-width {
   max-width: 1200px;
   @media (max-width: $break-point-tablet) {
-    width: 90%;
+    width: 90% !important;
+  }
+  @media (max-width: $break-point-mobile) {
+    width: 93% !important;
   }
 }

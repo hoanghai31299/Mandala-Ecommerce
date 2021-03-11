@@ -135,7 +135,7 @@ function HomeFooter() {
                   quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi
                   bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
                 </p>
-                <Link to="#">Xem thêm</Link>
+                <Link to="/about">Xem thêm</Link>
               </p>
             </div>
           </div>

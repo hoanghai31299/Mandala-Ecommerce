@@ -19,11 +19,11 @@ function ProductCard({ product }) {
         </p>
       </div>
       <div className="product-action">
-        <Link>Mua hàng</Link>
+        <Link to="/product-detail">Mua hàng</Link>
         <Link>
           <i className="fas fa-heart"></i>
         </Link>
-        <Link>
+        <Link to="/product-detail">
           <i className="fas fa-arrows-alt"></i>
         </Link>
       </div>

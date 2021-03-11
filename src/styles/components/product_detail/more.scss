@@ -1,0 +1,14 @@
+.more {
+  display: flex;
+  flex-direction: column;
+  .more-img {
+    img {
+      max-width: 100%;
+    }
+  }
+  .more-text {
+    font-size: 14px;
+    color: $color-grey;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,67 @@
+.contact {
+  .contact-container {
+    width: 80%;
+    margin: 0 auto;
+    .contact-header {
+      font-size: 20px;
+      padding: 20px 0;
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+    .contact-body {
+      display: flex;
+      padding-bottom: 40px;
+      @media (max-width: $break-point-tablet-sm) {
+        flex-direction: column;
+        .contact-left {
+          padding-right: 0 !important;
+        }
+      }
+      .contact-left {
+        flex: 5;
+        padding-right: 40px;
+        margin-bottom: 20px;
+        iframe {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+      .contact-right {
+        flex: 5;
+        .contact-form {
+          h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+          }
+          form {
+            text-align: center;
+            .form-item {
+              display: flex;
+              padding-bottom: 20px;
+              span {
+                flex: 2;
+                font-size: 12px;
+                font-weight: bold;
+              }
+              .input-text {
+                flex: 10;
+                @include input();
+                max-width: 100%;
+              }
+            }
+            button {
+              @include buttonBlack();
+              border: none;
+              display: inline;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

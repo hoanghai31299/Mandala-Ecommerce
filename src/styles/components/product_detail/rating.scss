@@ -1,0 +1,86 @@
+.rating {
+  .like {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    i {
+      margin-right: 2px;
+    }
+  }
+  .title {
+    h3 {
+      opacity: 1 !important;
+    }
+  }
+  padding: 20px 0;
+  .rating-head {
+    margin-bottom: 40px;
+    .rating-form {
+      margin: 20px 0;
+
+      .input {
+        margin: 20px 0;
+        * {
+          display: block;
+        }
+        span {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        textarea {
+          width: 100%;
+          border: 0.5px $color-grey-2 solid;
+          padding: 10px 20px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .comment-btn {
+        display: inline;
+        padding: 15px 20px;
+        color: $color-white;
+        background-color: $color-green;
+        border-radius: 12px;
+        cursor: pointer;
+        border: 3px white solid;
+        transition: 0.3s;
+        &:hover {
+          border: 3px $color-green solid;
+        }
+      }
+    }
+  }
+  .rating-body {
+    margin-bottom: 40px;
+    .product-name {
+      display: flex;
+      margin: 20px 0;
+      font-weight: bold;
+      font-size: 14px;
+      span {
+        margin-right: 10px;
+      }
+      .like {
+        white-space: nowrap;
+      }
+      i {
+        color: #f00;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      span {
+        color: #f00;
+      }
+    }
+    .comment-body {
+      padding: 20px 0;
+      display: flex;
+      img {
+        margin-right: 20px;
+      }
+      align-items: center;
+    }
+  }
+}

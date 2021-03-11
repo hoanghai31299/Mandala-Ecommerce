@@ -1,0 +1,112 @@
+.cart {
+  .cart-container {
+    width: 80%;
+    margin: 0 auto;
+    .cart-header {
+      font-size: 20px;
+      padding: 20px 0;
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .cart-action {
+    display: flex;
+    margin: 20px 0 50px 0;
+    justify-content: flex-end;
+    & > div {
+      @include buttonBlack;
+      margin-left: 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      &:hover {
+        background-color: $color-green;
+        color: $color-white;
+      }
+    }
+  }
+}
+table,
+th,
+td {
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  @media (max-width: break-point-tablet-sm) {
+    &,
+    * {
+      display: block;
+    }
+  }
+  thead {
+    text-transform: uppercase;
+    background-color: $color-grey-2;
+    font-weight: 500;
+    font-size: 16px;
+    th {
+      padding: 15px 0;
+      border-bottom: 2px rgba(0, 0, 0, 0.2) solid;
+    }
+  }
+  td {
+    text-align: center;
+    padding: 20px;
+    vertical-align: middle;
+  }
+  tbody {
+    span {
+      font-family: "Open Sans", sans-serif !important;
+      display: none;
+    }
+  }
+  @media (max-width: $break-point-mobile) {
+    thead {
+      display: none;
+    }
+    tbody {
+      tr {
+        display: flex !important;
+        flex-direction: column !important;
+        border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+        td {
+          text-align: left !important;
+          span {
+            display: block;
+            width: 40%;
+          }
+          display: flex;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+table.cart-table {
+  tbody {
+    tr {
+      td {
+        &:nth-child(1) {
+          width: 200px;
+          img {
+            max-width: 100%;
+          }
+        }
+        &:nth-child(2) {
+          width: 400px;
+        }
+        &:nth-child(3),
+        &:nth-child(5) {
+          font-family: $price-font;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  i {
+    cursor: pointer;
+  }
+}

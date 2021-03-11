@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Background from "../../assets/images/hot-product--background.jpg";
-import ProductCard from "./ProductCard";
+import ProductCard from "./Product/ProductCard";
 import ImageArray from "../../assets/images/products";
 import Slider from "react-slick";
 const products = [
@@ -93,8 +93,8 @@ function SliderProduct() {
     arrows: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    nextArrow: <Arrow arrowClass="fas fa-arrow-right" />,
-    prevArrow: <Arrow arrowClass="fas fa-arrow-left" />,
+    nextArrow: <Arrow arrowClass="fas fa-chevron-right" />,
+    prevArrow: <Arrow arrowClass="fas fa-chevron-left" />,
     responsive: [
       {
         breakpoint: 1025,

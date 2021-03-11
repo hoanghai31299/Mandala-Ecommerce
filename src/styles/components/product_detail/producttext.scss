@@ -1,0 +1,110 @@
+.product-text {
+  max-width: 100%;
+  h3 {
+    font-size: 20px;
+    color: rgb(89, 89, 89);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-size: 13px;
+    color: $color-grey;
+    margin-bottom: 20px;
+  }
+  p.price {
+    font-family: $price-font;
+    font-size: 20px;
+    color: $color-grey;
+    span:nth-child(1) {
+      margin-right: 20px;
+      font-size: 29px;
+      color: $color-black;
+    }
+    margin-bottom: 20px;
+  }
+  p.des {
+    line-height: 1.5;
+    color: $color-grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .select {
+    margin-bottom: 15px;
+    & > * {
+      display: block;
+      font-size: 14px;
+    }
+    span {
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+    select {
+      padding: 7px 20px;
+      width: 100%;
+      color: $color-grey;
+      border: 0.5px solid $color-grey-2;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .product-action {
+    display: flex;
+    transition: all 0.3s ease;
+    align-items: center;
+    margin-top: 30px;
+    a {
+      color: $color-black;
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+      font-size: 12px;
+      border: 1px currentColor solid;
+      border-radius: 12px;
+      margin: 0 3px;
+      &:first-child {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      &:hover {
+        color: $color-white;
+        background-color: $color-green;
+      }
+    }
+  }
+  .social-network {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+    & > span {
+      font-size: 12px;
+      font-weight: 200;
+    }
+    ul {
+      margin-left: 20px;
+      li {
+        user-select: none;
+        padding: 4px;
+        border-radius: 2px;
+        font-size: 12px;
+        margin-right: 2px;
+        font-weight: 700;
+        border: 0.5px solid $color-grey;
+        cursor: pointer;
+        display: inline-block;
+        &:last-child {
+          color: $color-green;
+          font-style: italic;
+        }
+      }
+
+      li.btn-blue {
+        color: $color-white;
+        background-color: rgb(0, 162, 255);
+      }
+      li.btn-red {
+        color: #f00;
+      }
+    }
+  }
+}

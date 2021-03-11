@@ -1,0 +1,7 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  @media (max-width: $break-point-mobile) {
+    grid-template-columns: repeat(2, 50%);
+  }
+}

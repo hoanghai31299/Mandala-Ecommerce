@@ -19,7 +19,7 @@
       border-top: 1px $color-grey-2 dashed;
       line-height: 30px;
       h5 {
-        color: $color-grey-2;
+        color: $color-grey;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 13px;
@@ -47,6 +47,9 @@
         span {
           font-family: $price-font;
           font-size: 15px;
+          @media (max-width: $break-point-mobile) {
+            font-size: 10px;
+          }
           color: $color-grey;
           &:first-child {
             margin-right: 10px;
