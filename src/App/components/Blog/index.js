@@ -9,7 +9,7 @@ import Blog6 from "../../../assets/images/blogs/blog_5.png";
 import BreadCrumb from "../../components/BreadCrumb";
 const arr = [
   { path: "/", name: "Home" },
-  { path: "/signin", name: "Đăng nhập" },
+  { path: "/blogs", name: "Tất cả bài viết" },
 ];
 const imgArr = [ImageBlog, Blog2, Blog3, Blog4, Blog5, Blog6];
 

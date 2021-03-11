@@ -155,8 +155,8 @@ function HomeFooter() {
                 <Link to="#">Bởi NamTran(19/9/2020)</Link>
               </p>
               <div className="read-more">
-                <Link to="#">Xem thêm</Link>
-                <Link to="#">23 bình luận</Link>
+                <Link to="/blogs">Xem thêm</Link>
+                <Link to="/blogs">23 bình luận</Link>
               </div>
             </div>
           </div>
