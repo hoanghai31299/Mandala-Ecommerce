@@ -52,6 +52,7 @@
           transition: all 0.3s ease;
           font-family: $hot-product-font;
           font-size: 18px;
+          line-height: 18px;
           text-decoration: none;
           color: $color-grey;
           padding: 0 20px;
@@ -62,6 +63,7 @@
         left: 50%;
         bottom: 0;
         z-index: 2;
+        color: black;
         transform: translate(-50%, 50%);
         background-color: $color-white;
       }

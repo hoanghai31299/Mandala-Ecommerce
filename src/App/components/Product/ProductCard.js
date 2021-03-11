@@ -11,7 +11,7 @@ function ProductCard({ product }) {
         <img src={image} alt="product" />
         <p className="product-text">
           <h5>{brand}</h5>
-          <h3>{name}</h3>
+          <h4>{name}</h4>
           <p>
             <span>{formatMoney(price)}</span>
             <span>{formatMoney(prePrice)}</span>
